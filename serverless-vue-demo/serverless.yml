@@ -1,0 +1,16 @@
+# serverless.yml文件
+component: website
+name: vue-starter
+app: vue-demo-6cb9842a
+
+inputs:
+  src:
+    src: ./src
+    # 配置了这个hook每次发布的时候会先build
+    hook: npm run build
+    dist: ./dist
+    index: index.html
+    error: index.html
+  region: ap-guangzhou
+  bucketName: my-vue-starter
+  protocol: https

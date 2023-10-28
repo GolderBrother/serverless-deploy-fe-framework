@@ -1,0 +1,12 @@
+component: website
+name: websiteDemo
+app: react-starter-7ae90038
+
+inputs:
+  src:
+    src: ./src
+    index: index.html
+    error: index.html
+  region: ap-guangzhou
+  bucketName: my-website-starter
+  protocol: https

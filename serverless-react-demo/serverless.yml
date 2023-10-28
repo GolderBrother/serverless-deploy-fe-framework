@@ -1,0 +1,14 @@
+component: website
+name: react-starter
+app: react-starter-7ae90038
+
+inputs:
+  src:
+    src: ./src
+    hook: npm run build
+    index: index.html
+    error: index.html
+    dist: ./build
+  region: ap-guangzhou
+  bucketName: my-react-starter
+  protocol: https
