@@ -61,16 +61,18 @@ component: website # (必填) 引用 component 的名称，当前用到的是 te
 name: websitedemo # (必填) 该 website 组件创建的实例名称
 app: example-fc928772 # (可选) 该 website 应用名称
 
-inputs:
-  src:
-    src: ./src
-    index: index.html
-    error: index.html
-    dist: ./dist
-  region: ap-guangzhou
-  bucketName: my-vue-starter
-  protocol: https
+inputs: # 配置输入参数的部分
+  src: # 指定源代码的位置
+    src: ./src # 源代码的路径
+    index: index.html # 网站的入口文件
+    error: index.html # 错误页面的文件
+    dist: ./dist # 构建后的代码的输出路径
+  region: ap-guangzhou # 网站所在的地区/区域
+  bucketName: my-vue-starter # 存储网站文件的存储桶名称
+  protocol: https # 网站使用的协议（这里是HTTPS）
 ```
+
+解释下这个配置文件，源代码位于 `./src` 目录下，入口文件为 `index.html`，错误页面也使用同一个文件。构建后的代码输出到`./dist`目录。网站将部署在 `ap-guangzhou` 地区，并使用名为 `my-vue-starter` 的存储桶来存储网站文件。
 
 更多配置查看[全量配置及配置说明](https://github.com/serverless-components/tencent-website/blob/master/docs/configure.md)
 
