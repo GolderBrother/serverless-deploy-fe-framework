@@ -149,7 +149,7 @@ npm run start
 
 ![serverless-react-project0.png](./images/serverless-react-project0.png)
 
-### 2、在`react`根目录下创建一个`serverless.yml`的文件
+### 2、将 `react` 项目包装成 `serverless` 应用
 
 我们再快速创建一个 `serverless` 应用：`react-starter`
 
